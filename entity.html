@@ -99,7 +99,7 @@ const E = {
    ['Governance operations','Security Council elections, Nova committee, treasury custody']
   ],
   budget:'230M ARB + $16M + 1,740 ETH',buntil:'Approved until end of 2027',bnote:'',
-  people:[['Mateusz','Head of Governance','matrzeszowski'],['Brendan Ma','Head of Investment Strategy · BD','itsbrendanma'],['Patrick McCorry','Research Lead · also OAT','stonecoldpat0'],['raam','Governance team','raamcc']],
+  people:[['Mateusz','Head of Governance','matrzeszowski'],['Brendan Ma','Head of Investment Strategy · BD','itsbrendanma'],['Patrick McCorry','Research Lead · also OAT','stonecoldpat0'],['raam','Governance team','raamcc'],['Lorenzo Sicilia','Head of Technology','aboutlo','https://uk.linkedin.com/in/lorenzosicilia'],['Ben Greenberg','Developer Relations Lead','hummusonrails','https://il.linkedin.com/in/hummusonrails'],['Aditi Chopra','Regional Growth Lead · India','aditichoprax','https://www.linkedin.com/in/aditichoprax/']],
   links:[]},
  opco:{name:'OpCo',badge:'AAE · Operations',logo:'assets/opco.png',tc:'#2fe08c',
   role:'The DAO\'s operating company.',
@@ -128,7 +128,7 @@ const E = {
    ['Ethereum infrastructure','maintains Prysm, which runs ~25% of Ethereum nodes']
   ],
   budget:'via Foundation',buntil:'Not DAO-funded · infra paid via the Foundation',bnote:'',
-  people:[['Steven Goldfeder','Co-founder & CEO','sgoldfed'],['Ed Felten','Co-founder & Chief Scientist','EdFelten'],['Harry Kalodner','Co-founder & CTO','hkalodner'],['A.J. Warner','Chief Strategy Officer · also OAT','ajwarner90']],
+  people:[['Steven Goldfeder','Co-founder & CEO','sgoldfed'],['Ed Felten','Co-founder & Chief Scientist','EdFelten'],['Harry Kalodner','Co-founder & CTO','hkalodner'],['A.J. Warner','Chief Strategy Officer · also OAT','ajwarner90'],['Preston Van Loon','Ethereum Core Developer · Prysm',null,'https://www.linkedin.com/in/prestonvanloon/'],['Pepper Lebeck-Jobe','Software Engineer · Nitro/BoLD',null,'https://www.linkedin.com/in/eljobe/'],['Gaël Blanchemain','Senior Technical Writer',null,'https://www.linkedin.com/in/gaelblanchemain/']],
   links:[['offchain.io','https://offchain.io/company']]},
  agv:{name:'Gaming · GCP → AGV',badge:'AAE · Wound Down',logo:'assets/agv.png',tc:'#ff9d54',
   role:'The DAO\'s gaming venture, now winding down.',
@@ -230,7 +230,7 @@ Promise.all([fetch('research/active_initiatives.json').then(r=>r.json()),fetch('
       </div>
       ${d.people&&d.people.length?`<div class="panel" style="--tc:${d.tc};margin-top:16px">
         <h2>${d.peopleLabel||'People'}</h2>
-        ${d.people.map(([n,r,h])=>`<div class="pe">${pfp(h,n)}<div><b>${n}</b><span class="r">${r}</span></div>${h?`<a href="https://x.com/${h}" target="_blank" style="margin-left:auto">@${h}</a>`:''}</div>`).join('')}
+        ${d.people.map(([n,r,h,url])=>`<div class="pe">${pfp(h,n)}<div><b>${n}</b><span class="r">${r}</span></div>${url?`<a href="${url}" target="_blank" style="margin-left:auto">LinkedIn ↗</a>`:h?`<a href="https://x.com/${h}" target="_blank" style="margin-left:auto">@${h}</a>`:''}</div>`).join('')}
         ${d.peopleNote?`<div class="bnote" style="margin-top:10px">${d.peopleNote}</div>`:''}
         <div class="links">${d.links.map(([t,u])=>`<a href="${u}" ${u.startsWith('http')?'target="_blank"':''}>${t}</a>`).join('')}</div>
       </div>`:''}

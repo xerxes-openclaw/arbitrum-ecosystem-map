@@ -464,14 +464,26 @@ Promise.all([fetch('research/active_initiatives.json').then(r=>r.json()),fetch('
   document.getElementById('zout').onclick=()=>zoomAt(Math.max(minS,scale/1.25));
   document.getElementById('zfit').onclick=()=>{ scale=initScale; tx=tx0; ty=ty0; applyT(); };
 
-  // people / what-they-do view toggle (each mode has its OWN saved layout + zoom)
+  // people / what-they-do view toggle (each mode has its OWN saved layout + zoom).
+  // PEOPLE is the default view (Zep, 2026-07-09); tasks is the toggle.
   {const tb=document.getElementById('viewtog');
    tb.onclick=()=>{ const on=map.classList.toggle('people'); tb.classList.toggle('on',on); tb.textContent=on?'Show tasks':'Show people'; applyMode(on?'people':'tasks'); };}
 
   // ── draggable graph (Arkham-style): grab ANY node or bubble; an entity drags its whole cluster with it ──
   {let drag=null;
-   // child bubbles of an entity node = the bubble ends of edges that start at this node
-   const kidsOf=el=>EDGES.filter(e=>e.a===el && e.b.classList && e.b.classList.contains('bub')).map(e=>e.b);
+   // child bubbles of an entity node = the bubble ends of edges that start at this node.
+   // In people mode, an entity also carries every person connected to it (multi-role
+   // people move with WHICHEVER of their entities is dragged — Zep, 2026-07-09).
+   const kidsOf=el=>{
+     const kids=EDGES.filter(e=>e.a===el && e.b.classList && e.b.classList.contains('bub')).map(e=>e.b);
+     if(map.classList.contains('people')){
+       for(const e of EDGES){
+         const other=e.a===el?e.b:(e.b===el?e.a:null);
+         if(other && other.classList && other.classList.contains('person') && !kids.includes(other)) kids.push(other);
+       }
+     }
+     return kids;
+   };
    document.querySelectorAll('.bub, .node, .person').forEach(el=>{
      el.style.cursor='grab';
      el.setAttribute('draggable','false');         // kill native HTML5 drag on the <a>/<img> (was hijacking the gesture)
@@ -491,7 +503,7 @@ Promise.all([fetch('research/active_initiatives.json').then(r=>r.json()),fetch('
        if(Math.abs(rdx)+Math.abs(rdy)>3) drag.moved=true;
        const dx=rdx/scale, dy=rdy/scale;
        el.style.left=(drag.bx+dx)+'px'; el.style.top=(drag.by+dy)+'px';
-       for(const k of drag.kids){ k.el.style.left=(k.bx+dx)+'px'; k.el.style.top=(k.by+dy)+'px'; }
+       for(const k of drag.kids){ k.el.style.left=(k.bx+dx)+'px'; k.el.style.top=(k.by+dy)+'px'; redrawConnected(k.el); }  // kids' own edges too (a multi-role person's line to their OTHER entity must follow)
        redrawConnected(el);                        // node<->bubble + report/dashed lines all rubber-band
      });
      // after a drag, swallow the click so a moved node doesn't navigate + a moved bubble doesn't open its card
@@ -515,7 +527,9 @@ Promise.all([fetch('research/active_initiatives.json').then(r=>r.json()),fetch('
   function layoutFor(m){ const loc=localLayout(); return loc[m] || (SAVED_LAYOUT&&SAVED_LAYOUT[m]) || null; }   // this browser's tweaks override the shared default
   function applyMode(m){ const L=layoutFor(m); if(L) applySnap(L); }
   function saveLayout(){ try{ const loc=localLayout(); loc[curMode()]=collectSnap(); localStorage.setItem(LKEY, JSON.stringify(loc)); }catch(e){} }
-  requestAnimationFrame(()=>applyMode('tasks'));   // default view = tasks, applied after the relaxation frame
+  // default view = PEOPLE (Zep, 2026-07-09), applied after the relaxation frame.
+  // Same path as a manual toggle so button label + saved layout stay in sync.
+  requestAnimationFrame(()=>{ const tb=document.getElementById('viewtog'); map.classList.add('people'); tb.classList.add('on'); tb.textContent='Show tasks'; applyMode('people'); });
 
   // subtree focus: hovering an entity or bubble isolates that entity's whole tree
   function focusOn(name){
