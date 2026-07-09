@@ -63,7 +63,8 @@ html{scroll-behavior:smooth}
   background:var(--blue);animation:drop 1.8s ease-in-out infinite}
 @keyframes drop{0%{transform:translateY(0);opacity:1}70%{transform:translateY(14px);opacity:0}100%{opacity:0}}
 
-.statbar{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:26px auto 0;max-width:1020px;position:relative;z-index:1;padding:0 18px}
+.statbar{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:26px auto 0;max-width:1020px;position:relative;z-index:1;padding:0 18px}
+.rowhint{font:600 11px var(--mono);color:#0a0e16;background:var(--blue);padding:4px 12px;border-radius:999px;white-space:nowrap}
 @media(max-width:900px){.statbar{grid-template-columns:repeat(2,1fr)}}
 .stat{background:radial-gradient(130% 130% at 50% 0%,var(--panel2),var(--panel));border-radius:14px;
   padding:16px 22px;border:1px solid rgba(180,196,215,.16);border-top:2px solid var(--blue);
@@ -258,6 +259,7 @@ footer b{color:var(--soft)}
   <div class="stat"><div class="v">1B+ <em>ARB</em></div><div class="k">allocated by the DAO since 2023*</div></div>
   <div class="stat"><div class="v">2.51B <em>ARB</em></div><div class="k">live in the treasury · <span id="treasuryUsd">≈$212M</span></div></div>
   <div class="stat"><div class="v">$23.5M</div><div class="k">2025 gross profit</div></div>
+  <div class="stat"><div class="v" id="arbPriceStat">$0.0845</div><div class="k">ARB price · <span id="arbPriceNote">Jul 9, 2026</span></div></div>
 </div>
 
 <!-- ═══════════ THE OWNER ═══════════ -->
@@ -328,8 +330,8 @@ footer b{color:var(--soft)}
 </div>
 
 <!-- ═══════════ THE FIVE AAEs ═══════════ -->
-<div class="divider"><span class="tag">// The entities</span><span class="line"></span><span class="note"><span id="arbPrice">ARB ≈ $0.078</span> (Jul 6, 2026) · click a row to open it</span></div>
-<div class="secsub">"Arbitrum Aligned Entities" is the DAO's own framework (<a href="https://forum.arbitrum.foundation/t/a-vision-for-the-future-of-arbitrum/28962" target="_blank">A Vision for the Future of Arbitrum, Apr 2025 ↗</a>): an entity counts if it's competent at its mandate, puts Arbitrum first, and needs Arbitrum to win. The five below are the center of it, with OpCo + OAT as the accountability bridge. ArbitrumDAO, up top, is the layer they all answer to.</div>
+<div class="divider"><span class="tag">// AAE's</span><span class="line"></span><span class="rowhint">▼ click a row to open it</span></div>
+<div class="secsub">"Arbitrum Aligned Entities" · the DAO's own framework (<a href="https://forum.arbitrum.foundation/t/a-vision-for-the-future-of-arbitrum/28962" target="_blank">A Vision for the Future of Arbitrum ↗</a>): an entity counts if it's competent at its mandate, puts Arbitrum first, and needs Arbitrum to win.</div>
 
 <div class="roster">
 
@@ -967,7 +969,8 @@ document.querySelectorAll(".ent").forEach(el=>{
       var p=j&&j.arbitrum&&j.arbitrum.usd; if(!p) return;
       var usd=TREASURY_ARB*p;
       var t=document.getElementById('treasuryUsd'); if(t) t.textContent='≈$'+(usd/1e6).toFixed(0)+'M';
-      var a=document.getElementById('arbPrice'); if(a) a.textContent='ARB ≈ $'+p.toFixed(4)+' (live)';
+      var a=document.getElementById('arbPriceStat'); if(a) a.textContent='$'+p.toFixed(4);
+      var an=document.getElementById('arbPriceNote'); if(an) an.textContent='live';
     }).catch(function(){});
 })();
 </script>
