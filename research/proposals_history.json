@@ -2,6 +2,13 @@
  "_note": "Per-entity governance proposal history, newest first. Every url is a real forum.arbitrum.foundation thread. Attribution audited Jul 8 2026: proposals authored by Entropy Advisors before OpCo was operational are credited to Entropy (by the forum-account that posted them), not OpCo. For Security Council these are its decisions/emergency actions.",
  "foundation": [
   {
+   "title": "AIP: Automate Timeboost Proceeds Split",
+   "url": "https://forum.arbitrum.foundation/t/constitutional-aip-automate-timeboost-proceeds-split/30920",
+   "date": "May 2026",
+   "status": "passed",
+   "one_line": "Automates the 97/3 Timeboost proceeds split; Snapshot passed Jul 2026, onchain step pending."
+  },
+  {
    "title": "Continued Funding for the Arbitrum Foundation",
    "url": "https://forum.arbitrum.foundation/t/continued-funding-for-the-arbitrum-foundation/30908",
    "date": "May 2026",
@@ -14,6 +21,34 @@
    "date": "Mar 2026",
    "status": "report",
    "one_line": "Sixth transparency report: 2025 spend, milestones and institutional adoption."
+  },
+  {
+   "title": "DVP Quorum: Implementation & Parameters",
+   "url": "https://forum.arbitrum.foundation/t/constitutional-dvp-quorum-for-arbitrumdao-implementation-parameters/30484",
+   "date": "Jan 2026",
+   "status": "passed",
+   "one_line": "Implements the DVP quorum upgrade; executed on-chain March 2026."
+  },
+  {
+   "title": "AIP: DVP Quorum",
+   "url": "https://forum.arbitrum.foundation/t/constitutional-aip-dvp-quorum/30053",
+   "date": "Oct 2025",
+   "status": "passed",
+   "one_line": "Temp check for delegated-voting-power quorum, 157M For."
+  },
+  {
+   "title": "AIP: Security Council Election Process Improvements",
+   "url": "https://forum.arbitrum.foundation/t/constitutional-aip-security-council-election-process-improvements/29848",
+   "date": "Aug 2025",
+   "status": "passed",
+   "one_line": "Snapshot approved 3 of 5 election-process changes; onchain vote postponed."
+  },
+  {
+   "title": "AIP: Constitutional Quorum Threshold Reduction",
+   "url": "https://forum.arbitrum.foundation/t/constitutional-aip-constitutional-quorum-threshold-reduction/29145",
+   "date": "May 2025",
+   "status": "passed",
+   "one_line": "Lowers the constitutional quorum threshold; executed on-chain Jul 2025."
   },
   {
    "title": "A Vision for the Future of Arbitrum",
@@ -30,11 +65,32 @@
    "one_line": "2024 Foundation spend and 276 funded projects disclosed."
   },
   {
+   "title": "Arbitrum Audit Program",
+   "url": "https://forum.arbitrum.foundation/t/arbitrum-audit-program/28368",
+   "date": "Feb 2025",
+   "status": "passed",
+   "one_line": "Subsidized audit program for Arbitrum projects; funded on-chain April 2025."
+  },
+  {
    "title": "Funds to Bolster the Foundation's Strategic Partnerships Budget",
    "url": "https://forum.arbitrum.foundation/t/non-constitutional-funds-to-bolster-foundation-s-strategic-partnerships-budget/26775",
    "date": "Oct 2024",
    "status": "passed",
    "one_line": "250M ARB for large strategic ecosystem and RWA/TradFi partnerships."
+  },
+  {
+   "title": "Improving Predictability - Ratification",
+   "url": "https://forum.arbitrum.foundation/t/improving-predictability-in-arbitrum-dao-s-operations-ratification/25854",
+   "date": "Jul 2024",
+   "status": "passed",
+   "one_line": "Ratifies the DAO operations cadence guidelines after the Snapshot vote."
+  },
+  {
+   "title": "Change AEP to Allow Orbit Chains on Any Blockchain",
+   "url": "https://forum.arbitrum.foundation/t/temperature-check-change-arbitrum-expansion-program-to-allow-deployments-of-new-orbit-chains-on-any-blockchain/23280",
+   "date": "Apr 2024",
+   "status": "passed",
+   "one_line": "Opens the Arbitrum Expansion Program to Orbit deployments on any blockchain, 145M For."
   },
   {
    "title": "Transparency Report 2023",
@@ -44,11 +100,46 @@
    "one_line": "Inaugural report: over $23M spent, 50+ projects funded in 10 months."
   },
   {
+   "title": "Changes to Constitution & Security Council Election Process",
+   "url": "https://forum.arbitrum.foundation/t/aip-changes-to-the-constitution-and-the-security-council-election-process/20856",
+   "date": "Jan 2024",
+   "status": "passed",
+   "one_line": "Constitutional amendments to the Security Council election process; executed on-chain."
+  },
+  {
+   "title": "Arbitrum Expansion Program and Developer Guild",
+   "url": "https://forum.arbitrum.foundation/t/the-arbitrum-expansion-program-and-developer-guild/20722",
+   "date": "Jan 2024",
+   "status": "draft",
+   "one_line": "Foundation program announcement (AEP licensing + 2% to the Developer Guild); never voted."
+  },
+  {
+   "title": "AIP-7: Governance Parameter Fixes",
+   "url": "https://forum.arbitrum.foundation/t/aip-7-arbitrum-one-governance-parameter-fixes/15920",
+   "date": "Aug 2023",
+   "status": "passed",
+   "one_line": "Fixes Arbitrum One governance parameters; executed on-chain Sep 2023."
+  },
+  {
    "title": "Licensing the Arbitrum tech stack to strategic partners (RFC)",
    "url": "https://forum.arbitrum.foundation/t/request-for-feedback-when-and-how-should-the-arbitrum-foundation-issue-a-licence-for-the-arbitrum-technology-stack-to-a-new-strategic-partner/15758",
    "date": "Aug 2023",
    "status": "draft",
    "one_line": "Foundation feedback thread on licensing the Arbitrum stack (AEP) to new partners."
+  },
+  {
+   "title": "Update Security Council Election Start Date",
+   "url": "https://forum.arbitrum.foundation/t/proposal-update-security-council-election-start-date-to-ensure-time-for-security-audit/15426",
+   "date": "Jul 2023",
+   "status": "passed",
+   "one_line": "Delays the first election start to allow a security audit; executed."
+  },
+  {
+   "title": "AIP-6: Security Council Elections",
+   "url": "https://forum.arbitrum.foundation/t/aip-6-security-council-elections/15425",
+   "date": "Jul 2023",
+   "status": "passed",
+   "one_line": "Establishes the Security Council election system; first election ran Sep 2023."
   },
   {
    "title": "AIP-1.2: Foundation and DAO Governance",
@@ -88,11 +179,74 @@
    "one_line": "Proposes replacing Timeboost with fee-based priority gas auction ordering."
   },
   {
+   "title": "Minimize Arbitrum Nova",
+   "url": "https://forum.arbitrum.foundation/t/constitutional-aip-minimize-arbitrum-nova/30880",
+   "date": "May 2026",
+   "status": "passed",
+   "one_line": "Moves Arbitrum Nova to maintenance mode, 195.7M For (Jun 2026)."
+  },
+  {
    "title": "ArbOS 61 Elara",
    "url": "https://forum.arbitrum.foundation/t/constitutional-aip-arbos-61-elara/30601",
    "date": "Mar 2026",
    "status": "active",
    "one_line": "ArbOS upgrade raising the Stylus size limit and OCL base-fee delegation."
+  },
+  {
+   "title": "Raise Gas Target & Pricing Algorithm Improvements",
+   "url": "https://forum.arbitrum.foundation/t/aip-raise-the-gas-target-min-l2-base-fee-implement-improvements-to-the-pricing-algorithm/30182",
+   "date": "Nov 2025",
+   "status": "passed",
+   "one_line": "Raises the gas target and minimum L2 base fee; executed bundled with ArbOS 51 Dia."
+  },
+  {
+   "title": "ArbOS 50 Dia",
+   "url": "https://forum.arbitrum.foundation/t/constitutional-aip-arbos-version-50-dia/29835",
+   "date": "Aug 2025",
+   "status": "passed",
+   "one_line": "ArbOS upgrade; executed on-chain as ArbOS 51 Dia with the gas pricing updates."
+  },
+  {
+   "title": "Disable Legacy Tether Bridge",
+   "url": "https://forum.arbitrum.foundation/t/constitutional-aip-disable-legacy-tether-bridge/29503",
+   "date": "Jun 2025",
+   "status": "passed",
+   "one_line": "Disables the legacy USDT bridge; executed via a bundled maintenance vote."
+  },
+  {
+   "title": "Update the Upgrade Executors",
+   "url": "https://forum.arbitrum.foundation/t/constitutional-aip-update-the-upgrade-executors/29463",
+   "date": "Jun 2025",
+   "status": "passed",
+   "one_line": "Updates the upgrade executor contracts after a Trail of Bits audit; executed."
+  },
+  {
+   "title": "Remove Cost Cap on Arbitrum Nova",
+   "url": "https://forum.arbitrum.foundation/t/constitutional-aip-remove-cost-cap-on-arbitrum-nova/29332",
+   "date": "May 2025",
+   "status": "passed",
+   "one_line": "Removes the Nova cost cap; executed via a bundled maintenance vote."
+  },
+  {
+   "title": "ArbOS 40 Callisto",
+   "url": "https://forum.arbitrum.foundation/t/constitutional-aip-arbos-version-40-callisto/28436",
+   "date": "Feb 2025",
+   "status": "passed",
+   "one_line": "ArbOS upgrade for Ethereum Pectra compatibility; executed on-chain."
+  },
+  {
+   "title": "Timeboost + Nova Fee Sweep",
+   "url": "https://forum.arbitrum.foundation/t/aip-timeboost-nova-fee-sweep/28247",
+   "date": "Jan 2025",
+   "status": "passed",
+   "one_line": "Adopts Timeboost onchain and sweeps Nova fees; executed Mar 2025."
+  },
+  {
+   "title": "Extend Delay on L2 Timelock",
+   "url": "https://forum.arbitrum.foundation/t/constitutional-extend-delay-on-l2time-lock/26470",
+   "date": "Aug 2024",
+   "status": "passed",
+   "one_line": "Extends the L2 timelock from 3 to 8 days; executed on-chain."
   },
   {
    "title": "ArbOS 31 Bianca: Stylus, RIP-7212, Nova Fee Router",
@@ -109,6 +263,27 @@
    "one_line": "Adopts the express-lane MEV auction for transaction ordering."
   },
   {
+   "title": "Funds to Bootstrap the First BoLD Validator",
+   "url": "https://forum.arbitrum.foundation/t/aip-funds-to-bootstrap-the-first-bold-validator/24506",
+   "date": "May 2024",
+   "status": "passed",
+   "one_line": "ETH funding for the Foundation to run the first BoLD validator; executed."
+  },
+  {
+   "title": "Nova Fee Router (ArbOS 30)",
+   "url": "https://forum.arbitrum.foundation/t/aip-nova-fee-router-proposal-arbos-30/23310",
+   "date": "Apr 2024",
+   "status": "passed",
+   "one_line": "Routes Nova fees to the DAO; own Snapshot passed, shipped via the ArbOS 31 Bianca bundle."
+  },
+  {
+   "title": "RIP-7212 Precompile Support (ArbOS 30)",
+   "url": "https://forum.arbitrum.foundation/t/aip-support-rip-7212-for-account-abstraction-wallets-arbos-30/23298",
+   "date": "Apr 2024",
+   "status": "passed",
+   "one_line": "P256 precompile for AA wallets; own Snapshot passed, shipped via the ArbOS 31 Bianca bundle."
+  },
+  {
    "title": "BOLD: permissionless validation",
    "url": "https://forum.arbitrum.foundation/t/aip-bold-permissionless-validation-for-arbitrum/23232",
    "date": "Apr 2024",
@@ -123,11 +298,32 @@
    "one_line": "Activates the Stylus VM enabling Rust/C++ contracts alongside the EVM."
   },
   {
+   "title": "Fix Fee Oversight (ArbOS v20 Atlas)",
+   "url": "https://forum.arbitrum.foundation/t/fix-fee-oversight-arbos-v20-atlas/22152",
+   "date": "Mar 2024",
+   "status": "passed",
+   "one_line": "Lowers the L1 surplus fee and L2 minimum via Security Council action, 200.8M For."
+  },
+  {
+   "title": "Batch Poster Manager & Sequencer Inbox Finality Fix",
+   "url": "https://forum.arbitrum.foundation/t/aip-batch-poster-manager-and-sequencer-inbox-finality-fix/20995",
+   "date": "Jan 2024",
+   "status": "passed",
+   "one_line": "Own Snapshot passed; executed bundled into the ArbOS 20 Atlas onchain vote."
+  },
+  {
    "title": "ArbOS 20 Atlas",
    "url": "https://forum.arbitrum.foundation/t/aip-arbos-version-20-atlas/20957",
    "date": "Jan 2024",
    "status": "passed",
    "one_line": "Adds EIP-4844 blob support and Dencun features."
+  },
+  {
+   "title": "ArbOS Version 11",
+   "url": "https://forum.arbitrum.foundation/t/aip-arbos-version-11/19696",
+   "date": "Nov 2023",
+   "status": "passed",
+   "one_line": "ArbOS 11 upgrade; live on mainnet February 2024."
   }
  ],
  "opco": [
@@ -137,6 +333,13 @@
    "date": "2026",
    "status": "starting",
    "one_line": "Proposed forum rules for responsible AI-generated governance participation."
+  },
+  {
+   "title": "AGV Wind-Down: Return of Capital to the DAO Treasury",
+   "url": "https://forum.arbitrum.foundation/t/agv-wind-down-structured-transition-return-of-capital-to-the-dao-treasury/31012",
+   "date": "Jun 2026",
+   "status": "passed",
+   "one_line": "Structured AGV wind-down, 191M For; 86.18M ARB returned to the treasury Jul 7, 2026."
   },
   {
    "title": "Watchdog program operations",
@@ -165,6 +368,13 @@
    "date": "2025",
    "status": "active",
    "one_line": "The program that pays active DAO voters each month; run by OpCo."
+  },
+  {
+   "title": "Arbitrum DAO Firestarter Fund",
+   "url": "https://forum.arbitrum.foundation/t/non-constitutional-arbitrum-dao-firestarter-fund/30101",
+   "date": "Oct 2025",
+   "status": "draft",
+   "one_line": "Proposed a DAO research fund; pivoted to a pilot funded from OpCo's own budget, never voted."
   },
   {
    "title": "Updating the OpCo Foundation's Operational Capability",
@@ -444,7 +654,15 @@
    "one_line": "Creates STEP, the RWA-investing program later merged into ATMC."
   }
  ],
- "agv": [],
+ "agv": [
+  {
+   "title": "AGV Wind-Down: Return of Capital to the DAO Treasury",
+   "url": "https://forum.arbitrum.foundation/t/agv-wind-down-structured-transition-return-of-capital-to-the-dao-treasury/31012",
+   "date": "Jun 2026",
+   "status": "passed",
+   "one_line": "Structured AGV wind-down, 191M For; 86.18M ARB returned to the treasury Jul 7, 2026."
+  }
+ ],
  "oat": [
   {
    "title": "OAT June 2026 Elections Overview",
