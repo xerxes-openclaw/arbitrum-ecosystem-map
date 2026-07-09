@@ -37,6 +37,7 @@ body{background:var(--bg);color:var(--text);font:400 14px/1.55 var(--sans)}
   border-bottom:1px solid rgba(18,170,255,.25);padding-bottom:7px}
 .big{font:800 26px var(--mono);color:var(--tc,#12aaff);line-height:1.1}
 .big small{font:400 12px var(--sans);color:var(--muted)}
+.buntil{font:600 13px var(--mono);color:var(--tc,#12aaff);opacity:.8;margin-top:7px;letter-spacing:.02em}
 .bnote{color:var(--muted);font-size:12px;margin-top:10px;line-height:1.65}
 .init{display:flex;gap:13px;padding:14px 0;border-bottom:1px solid rgba(255,255,255,.06);align-items:flex-start}
 .init:last-child{border-bottom:none}
@@ -95,7 +96,7 @@ const E = {
    ['Ecosystem &amp; grants','grant programs, founder programs, the Developer Guild'],
    ['Governance operations','Security Council elections, Nova committee, treasury custody']
   ],
-  budget:'230M ARB + $16M + 1,740 ETH',bnote:'Continued Funding renewal (passed Jun 2026); funds the Foundation through end-2027.',
+  budget:'230M ARB + $16M + 1,740 ETH',buntil:'Approved until end of 2027',bnote:'',
   people:[['Mateusz','Head of Governance','matrzeszowski'],['Brendan Ma','Head of Investment Strategy · BD','itsbrendanma'],['Patrick McCorry','Research Lead · also OAT','stonecoldpat0'],['raam','Governance team','raamcc']],
   links:[]},
  opco:{name:'OpCo',badge:'AAE · Operations',logo:'assets/opco.png',tc:'#2fe08c',
@@ -107,12 +108,12 @@ const E = {
    ['AAE coordination','the accountability bridge across the Aligned Entities'],
    ['Research grants','funds early ideas via Firestarters']
   ],
-  budget:'30M ARB / 30 months',bnote:'Initial 30-month term (6 months setup + 24 operations), passed Dec 2024. No fixed end date published; continuation requires a DAO renewal vote.',
+  budget:'30M ARB / 30 months',buntil:'Approved Dec 2024 · 30-month term',bnote:'',
   people:[['Tamara Benetti','Head of Operations','TaBenetti'],['Sinkas','Program Manager','Sinkas_'],['Armin','Director of Finance & Treasury','armin_0x'],['Head of OpCo','hired · name not yet announced',null]],
   links:[['OpCo proposal','https://forum.arbitrum.foundation/t/opco-a-dao-adjacent-entity-for-strategy-execution/27361'],['June 2026 update','https://forum.arbitrum.foundation/t/30948'],['arbitrum-opco.com','https://arbitrum-opco.com']]},
  entropy:{name:'Entropy Advisors',badge:'AAE · Strategy',logo:'assets/entropy.png',tc:'#b78cff',
   role:'Exclusive strategy & execution firm. Writes sunset and handoff clauses into its own programs, then actually hands them off.',
-  budget:'$3M/year',bnote:'Y2-Y3 engagement (passed Jul 2025), runs Sep 1, 2025 → Aug 31, 2027.',
+  budget:'$3M/year',buntil:'Approved until Aug 31, 2027',bnote:'',
   people:[['Matt Fiebach','Co-founder · ex-Blockworks Research','MattFiebach'],['Sam Martin','Co-founder · ex-Blockworks Research','swmartin19']],
   links:[['Y1 contract','https://forum.arbitrum.foundation/t/entropy-advisors-exclusively-working-with-arbitrum-dao/25246'],['Y2-Y3 renewal','https://forum.arbitrum.foundation/t/entropy-advisors-exclusively-working-with-the-arbitrum-dao-y2-y3/29458'],['entropyadvisors.com','https://entropyadvisors.com']]},
  offchain:{name:'Offchain',badge:'AAE · Core Dev',logo:'assets/offchain.png',tc:'#ffc554',
@@ -220,8 +221,9 @@ Promise.all([fetch('research/active_initiatives.json').then(r=>r.json()),fetch('
     </div>
     <div>
       <div class="panel" style="--tc:${d.tc}">
-        <h2>${d.budgetLabel||'Overall budget'}</h2>
+        <h2>${d.budgetLabel||'Budget'}</h2>
         <div class="big" style="--tc:${d.tc}">${d.budget}</div>
+        ${d.buntil?`<div class="buntil" style="--tc:${d.tc}">${d.buntil}</div>`:''}
         ${d.bnote?`<div class="bnote">${d.bnote}</div>`:''}
       </div>
       ${d.people&&d.people.length?`<div class="panel" style="--tc:${d.tc};margin-top:16px">
