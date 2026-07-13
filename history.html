@@ -259,9 +259,9 @@ window.addEventListener('error',function(e){var t=e.target;if(!t||t.tagName!=='I
 
 <div class="statbar">
   <div class="stat"><div class="v">1B+ <em>ARB</em></div><div class="k">allocated by the DAO since 2023*</div></div>
-  <div class="stat"><div class="v">2.51B <em>ARB</em></div><div class="k">live in the treasury · <span id="treasuryUsd">≈$212M</span></div></div>
+  <div class="stat"><div class="v">2.51B <em>ARB</em></div><div class="k">live in the treasury · <span id="treasuryUsd">≈$233M</span></div></div>
   <div class="stat"><div class="v">$23.5M</div><div class="k">2025 gross profit</div></div>
-  <div class="stat"><div class="v" id="arbPriceStat">$0.0845</div><div class="k">ARB price · <span id="arbPriceNote">Jul 9, 2026</span></div></div>
+  <div class="stat"><div class="v" id="arbPriceStat">$0.0926</div><div class="k">ARB price · <span id="arbPriceNote">Jul 13, 2026</span></div></div>
 </div>
 
 <!-- ═══════════ THE OWNER ═══════════ -->
@@ -518,7 +518,7 @@ window.addEventListener('error',function(e){var t=e.target;if(!t||t.tagName!=='I
           <div class="colh">Funding by year</div>
           <div class="frow"><span class="yr">2024</span><div class="bar"><div class="fill" style="--w:100%"></div><span>225M ARB authorized on-chain <a href="https://forum.arbitrum.foundation/t/catalyze-gaming-ecosystem-growth-on-arbitrum/22368" target="_blank">GCP ↗</a></span></div></div>
           <div class="frow"><span class="yr">2026</span><div class="bar"><div class="fill" style="--w:64%;background:linear-gradient(90deg,rgba(255,197,84,.8),rgba(255,197,84,.2))"></div><span>−143.7M ARB returns to treasury <a href="https://forum.arbitrum.foundation/t/arbitrum-gaming-ventures-wind-down/31012" target="_blank">wind-down ↗</a></span></div></div>
-          <div class="fnote">The plan was 160M ARB grants/investments + 40M infra + $25M ops cap in ARB. Only ~$10M was actually deployed (15 investments). What goes back: 86.18M held at Foundation + 57.5M in AGV.</div>
+          <div class="fnote">The plan was 160M ARB grants/investments + 40M infra + $25M ops cap in ARB. Only ~$10M was actually deployed (15 investments). What goes back: 86.18M held at Foundation (returned to the treasury Jul 7, 2026) + 57.5M in AGV (pending).</div>
         </div>
         <div>
           <div class="colh">Timeline</div>
@@ -529,7 +529,7 @@ window.addEventListener('error',function(e){var t=e.target;if(!t||t.tagName!=='I
           </ul>
           <div class="colh">Active now · the wind-down</div>
           <ul class="plist">
-            <li>Passed Jul 2 (191M For / 8.1M Abstain): ~143.7M ARB returns (86.18M from AF + 57.5M from AGV) · initial $7M USD to treasury programs <a href="https://forum.arbitrum.foundation/t/31012" target="_blank">↗</a></li>
+            <li>Passed Jul 2 (191M For / 8.1M Abstain): ~143.7M ARB returns · the AF-held 86.18M landed in the treasury Jul 7, AGV's own 57.5M is pending · initial $7M USD to treasury programs <a href="https://forum.arbitrum.foundation/t/31012" target="_blank">↗</a></li>
             <li>~$10M stays invested across 15 positions · portfolio management moves to OpCo</li>
             <li>The entity lives on through end-2026, but only to wind down the portfolio</li>
             <li>2026 Council: David Bolger, Greg Canessa, JoJo, Tim Chang, John Kennedy</li>
@@ -597,9 +597,9 @@ window.addEventListener('error',function(e){var t=e.target;if(!t||t.tagName!=='I
           <div class="fnote">STEP 1 deployed across BUIDL, USDY, USTB, USDM, TBill, bIB01 (Steakhouse as PM); STEP 2.0: Franklin Templeton 35% / Spiko 35% / WisdomTree 30%. ATMC's separate ETH strategies: ~$623k cumulative interest since May 2025; 12,750 ETH approved for staking.</div>
         </div>
         <div>
-          <div class="colh">Live on-chain balances <small style="text-transform:none;letter-spacing:0">(Jul 6, 2026 ~10:52 UTC)</small></div>
+          <div class="colh">Live on-chain balances <small style="text-transform:none;letter-spacing:0">(Jul 13, 2026 ~08:22 UTC)</small></div>
           <ul class="plist">
-            <li>DAO Treasury: <b>2,426,958,656 ARB</b> · <a href="https://arbiscan.io/address/0xF3FC178157fb3c87548bAA86F9d24BA38E649B58" target="_blank">arbiscan ↗</a> (the Foundation’s three-year report cited ~2.66B, Mar 2026; since then the 230M renewal left on Jun 28, and AGV’s 143.7M is still to arrive)</li>
+            <li>DAO Treasury: <b>2,513,141,992 ARB</b> · <a href="https://arbiscan.io/address/0xF3FC178157fb3c87548bAA86F9d24BA38E649B58" target="_blank">arbiscan ↗</a> (the Foundation’s three-year report cited ~2.66B, Mar 2026; the 230M renewal left Jun 28, AGV’s 86.18M AF-held share arrived Jul 7 <a href="https://arbiscan.io/tx/0xeccd37cb552705569918a127afcfc78f85e83089327f9d9c115864b8b35c7bcc" target="_blank">tx ↗</a>, and 57.5M from AGV itself is still to come)</li>
             <li>Treasury Timelock (ETH sink, where Timeboost lands): <b>78.94 ETH</b> · <a href="https://arbiscan.io/address/0xbFc1FECa8B09A5c5D3EFfE7429eBE24b9c09EF58" target="_blank">↗</a></li>
             <li>DRIP wallet: <b>63,696,184 ARB</b> · matches the reported ~63.7M remaining ✓</li>
             <li>DIP/RAD pool: <b>4,882,489 ARB</b> (down from ~7M as payouts run) · Watchdog wallet: <b>561,224 ARB</b> · AF 250M-tranche wallet: <b>137.7M ARB</b></li>
@@ -639,10 +639,10 @@ window.addEventListener('error',function(e){var t=e.target;if(!t||t.tagName!=='I
     const svg=`<svg width="96" height="96" viewBox="0 0 96 96">${arcs}<text x="${cx}" y="${cy+1}" text-anchor="middle" fill="#eef2f8" font-size="15" font-weight="800" font-family="Segoe UI,system-ui,sans-serif">$${Math.round(total)}M</text><text x="${cx}" y="${cy+13}" text-anchor="middle" fill="#8494ab" font-size="6.5" letter-spacing="1.2" font-family="Segoe UI,system-ui,sans-serif">${label}</text></svg>`;
     const leg=slices.map(s=>`<div style="display:flex;align-items:center;gap:6px;font-size:10.5px;color:var(--muted);line-height:1.7"><span style="width:7px;height:7px;border-radius:50%;background:${s.c};flex:none"></span>${s.l}<span style="margin-left:auto;color:#c9d4e4;font-family:var(--mono)">$${s.v.toFixed(0)}M</span></div>`).join('');
     return `<div style="display:flex;gap:14px;align-items:center;margin-top:10px"><div style="flex:none">${svg}</div><div style="flex:1;min-width:0">${leg}</div></div>`;};
-  // Jul 9, 2026 · ARB $0.0845, ETH $1,754 (live pulls at update time)
+  // Jul 13, 2026 · ARB $0.0926, ETH $1,785 (live pulls at update time)
   document.getElementById('daodonut').innerHTML=donut([
-    {l:'ARB · treasury proxy',v:212.4,c:'#12aaff'},
-    {l:'ETH · ATMC strategies + timelock',v:28.2,c:'#b78cff'},
+    {l:'ARB · treasury proxy',v:232.8,c:'#12aaff'},
+    {l:'ETH · ATMC strategies + timelock',v:29.3,c:'#b78cff'},
     {l:'RWAs · STEP treasuries',v:47,c:'#9dcced'},
     {l:'Stablecoins',v:17,c:'#2fe08c'}],'CONTROLLED');
   document.getElementById('atmcdonut').innerHTML=donut([
